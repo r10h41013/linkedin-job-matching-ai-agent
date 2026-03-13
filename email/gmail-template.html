@@ -1,0 +1,42 @@
+<html>
+  <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #222;">
+    
+    <p>Hi Vincent,</p>
+
+    <p>
+      A highly matched job opportunity has been identified based on your resume and the job description.
+      This role appears to align well with your background and career interests.
+    </p>
+
+    <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+
+    <p><strong>Job Title:</strong> {{ $json.Title }}</p>
+
+    <p><strong>Matching Score:</strong> {{ $json['Matching score'] }}/100</p>
+
+    <p><strong>Strengths and Weaknesses Analysis:</strong></p>
+
+    <div style="white-space: pre-line;">
+      {{ $json['An analysis of my strengths and weaknesses for this role'] }}
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+
+    <p>
+      <strong>LinkedIn Job Link:</strong><br>
+      <a href="{{ $json.Link }}" target="_blank" style="color:#1a73e8;">
+        View the job posting on LinkedIn
+      </a>
+    </p>
+
+    <p>
+      If this opportunity looks interesting, you may consider reviewing the job details and applying through the link above.
+    </p>
+
+    <p>
+      Best regards,<br>
+      Your AI Job Matching Assistant
+    </p>
+
+  </body>
+</html>
